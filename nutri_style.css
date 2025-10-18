@@ -1,0 +1,341 @@
+html{
+    scroll-behavior: smooth;
+}
+.encabezado{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: beige;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    padding: 10px 40px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1000;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu{
+    list-style: none; /*Saca los puntos*/
+    display: flex; 
+    gap: 80px; /*espacio entre caja*/
+    max-width: 600px;   
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    background-color: pink;
+    padding: 5px 10px; /*espacio entre y bordes*/
+    border: 1px solid palevioletred;
+}
+
+/*Organizacion de titulo, subtitulo e imagen*/
+.titulo{
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    text-align: center;
+    background: linear-gradient(to bottom, white, rgb(241, 207, 165), white);
+}
+.titulo h1{
+    display: flex;
+    color: rgb(187, 17, 73);
+    justify-content: center;
+    font-size: 260%;
+ 
+}
+
+.titulo h3{
+    display: flex;
+    color: rgb(224, 122, 81);
+    justify-content: center;
+    font-size: 200%;
+}
+
+.titulo img{
+    width: 15%;
+    height: auto;
+    border-radius: 20%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4); /*Sombra a la imagen*/
+}
+
+/*Orgaizacion de sobre mi con texto e imagen*/
+.pres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, white, rgb(241, 207, 165), white);
+    padding: 80px;
+    gap: 260px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.pres img{
+    width: 24%;
+    border-radius: 10%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    margin-left: 9%;
+}
+.pres img:hover{
+    transform: scale(1.05);
+}
+
+.pres h2{
+    font-size: 190%;
+    margin-bottom: 35px;
+    color: rgb(233, 77, 39);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pres-text p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    max-width: 100%;
+    text-align:justify
+}
+
+#nom{
+    color: rgb(12, 105, 70);
+    text-align: center;
+}
+/*Servicios*/
+.Ser{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(
+        to bottom,
+    rgba(239, 240, 235, 0),  
+    rgb(241, 207, 165) 50%, 
+    rgba(239, 240, 235, 0)   
+  );
+  padding: 100px 0;
+}
+.Ser h2{
+    color: palevioletred;
+    padding: 25px;
+}
+.Planes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.Plan1, .Plan2, .Plan3{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(209, 151, 80, 0.897);
+}
+.Plan1 h3, .Plan2 h3, .Plan3 h3{
+    text-decoration: underline;
+    color: palevioletred;
+
+}
+.Plan1 ul{
+    list-style-type: "✅";
+    text-align: left;
+}
+.Plan2 ul{
+    list-style-type: "✅";
+    text-align: left;
+}
+.Plan3 ul{
+    list-style-type: "✅";
+    text-align: left;
+}
+.Plan1:hover, .Plan2:hover, .Plan3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*Testimonios*/
+.Test{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 80px;
+    gap: 20px; /* Espaciado entre el título y los párrafos */
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+.titulo_test {
+    background-color: rgb(243, 162, 189); 
+    color: rgb(8, 8, 8); 
+    font-size: 180%; 
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; 
+    align-items: center;
+    gap: 20px;
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 15px; /* Espaciado externo y centrado */
+    max-width: fit-content; /* Ajustar el ancho al contenido */
+}
+
+.c1, .c2, .c3, .c4 {
+    background-color: #e2dfdf; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Espaciado externo */
+    max-width: 400px; 
+    text-align: center; 
+    background: linear-gradient(to bottom, #ffffff, #cac6c6);
+}
+
+.Test h3 {
+    font-size: 140%; 
+    color: #b458a0; 
+    margin-bottom: 10px; /* Espaciado debajo del nombre */
+}
+
+.test_caja p {
+    font-size: 220%; 
+    color: #080808; 
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+.flor-izquierda{
+    position: absolute;
+    left: 7px;
+    top: 62%;
+    transform: translateY(-50%);
+    width: 25%;
+    height: auto;
+}
+.flor-derecha{
+    position:absolute;
+    right: 7px;
+    top: 62%;
+    transform: translateY(-50%);
+    width: 25%;
+    height: auto;
+}
+.parallax{
+    position: relative;
+    background-image: url("Imagenes/fondo.jpeg");
+    height: 200px;
+    background-attachment: fixed;/*el fondo quede fijo mientras la pagina se mueve*/
+    background-position: center;/*posiciona imagen en el centro*/
+    background-repeat: no-repeat;/*no se repite la imagen*/
+    background-size: cover;/*hace que la imagen cubra todo sin quedar deformada*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+.efecto_texto{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+}
+.parallax::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/*Formulario*/
+.Contacto{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(
+        to bottom,
+     rgba(239, 240, 235, 0),  
+    rgb(241, 207, 165) 50%, 
+    rgba(239, 240, 235, 0)
+  );
+  padding: 100px 0;
+}
+#Nombre{
+    width: 200px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: large;
+}
+#Apellido{
+    width: 200px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: large;
+}
+#Correo_electronico{
+    width: 405px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: large;
+}
+#Numero_telefonico{
+    width: 405px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: large;
+}
+#Objetivos{
+    width: 405px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Consulta{
+    width: 150px;
+    height: 20px;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+.Contacto a{
+    text-decoration: none;
+    color: rgb(212, 87, 129);
+    font-size:large;
+}
+
+/*pie de pagina*/
+    footer{
+    background-color: rgb(243, 201, 225);
+    padding: 10px 40px;
+    margin-top: 6%;
+    font-size: 100%;
+    text-align: center;
+}
